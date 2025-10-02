@@ -63,8 +63,6 @@ jobs:
           script: |
             # Переходим в директорию prod окружения
             cd /home/tima/simpe-dimple
-            
-            # Останавливаем текущий контейнер если запущен
             docker compose -p prod down || true
             
             # Обновляем код

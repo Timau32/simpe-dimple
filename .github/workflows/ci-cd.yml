@@ -29,7 +29,7 @@ jobs:
           port: ${{ secrets.SERVER_PORT || 22 }}
           script: |
             # Переходим в директорию dev окружения
-            cd /home/tima/simpe-dimple
+            cd /home/simple-dev
             
             # Останавливаем текущий контейнер если запущен
             docker compose -p dev down || true
